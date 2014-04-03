@@ -182,8 +182,6 @@
 }
 
 .ui-slider-track {
-    margin-left: 38px;
-    margin-right: 35px;
 }
 
 .ui-mobile .ui-page .ui-slider-input, .ui-mobile .ui-dialog .ui-slider-input {
@@ -198,12 +196,6 @@
 /************************
  *  Volume Slider
  ***********************/
-#mutebt {
-    float: left;
-    margin-left: 8px;
-    margin-top: 8px;
-}
-
 #volumeslider {
     display: inline;
 }
