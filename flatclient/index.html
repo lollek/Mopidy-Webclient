@@ -186,18 +186,6 @@
 </div>
 
 
-
-<div data-role="header" data-tap-toggle="false" id="header" data-position="fixed" class="ui-grid-b header-breakpoint headerbtn">
-    <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu" id="headermenubtn"></a>
-<!--     <a id="headerplaylistsbtn" href="#" class="" onclick="switchContent('playlists' ); return false;">
-            <i class="fa fa-star"></i></a> &nbsp;
--->
-    <h1 id="contentHeadline" >Musicbox</h1>
-     <a id="headersearchbtn" href="#" class="ui-btn-icon-right headerbtn" onclick="switchContent('search' ); return false;">
-            <i class="fa fa-search"></i></a>
-</div>
-<!-- /header -->
-
 <div data-role="content" id="playlistspane" class="pane ui-grid-a pl-breakpoint">
     <div class="ui-block-a scroll" id="playlistslistdiv">
         <ul id="playlistslist" class="table"></ul>
@@ -333,14 +321,8 @@
                 <div id="infoartist"></div>
             </div>
         </div>
-        <div id="controldiv" class="playPausebtn">
-            <a href="#" onclick="doPlay(); return false"><span id="btplay"><img src="images/icons/pause_32x32.png"
-                                                                                alt="Play" id="playimg"/></span></a>
-        </div>
-</div>
-<div data-role="footer" data-tap-toggle="false" data-position="fixed" id="nowPlayingFooter">
-<!--     <p id="buttons">
 
+        <div class="buttons" style="float:right; margin-top: 5px;">
          <select name="flip-random" id="flip-random" data-role="slider" data-mini="true" >
              <option value="off">Shuffle</option>
              <option value="on">Shuffle</option>
@@ -349,19 +331,17 @@
              <option value="off">Repeat</option>
              <option value="on">Repeat</option>
          </select>
+         </div>
 
-
-    </p> -->
-    <!--&nbsp; <a href="#" onclick="doShuffle(); return false" title="Shuffle"><img src="images/icons/fork_21x24.png"-->
-    <!--id="shufflebt" alt=""/></a>-->
-
-    <p id="buttons"' style="float:right; margin-top: 20px; margin-right: 5px;">
+         <!--
+    <p id="buttons" style="float:right; margin-top: 20px; margin-right: 5px;">
             <a href="#" onclick="doRandom(); return false"><i class="fa fa-random" id="randombt"></i></a>
             &nbsp; <a href="#" onclick="doRepeat(); return false"><i class="fa fa-repeat" id="repeatbt"></i></a>
             &nbsp; <a href="#" onclick="doShuffle(); return false" title="Shuffle"><i class="fa fa-code-fork" id="shufflebt"></i></a>
     </p>
+    -->
 
-        <div class="nowPlayingControls" style="float:left; margin-left: 5px;">
+        <div class="nowPlayingControls" style="width: 200px; margin: auto;">
             <a href="#" onclick="doPrevious(); return false"><span id="btprev"><i class="fa fa-fast-backward"></i></span></a>
             &nbsp; <a href="#" onclick="doPlay(); return false"><span id="btplayNowPlaying"><i class="fa fa-play"></i></span></a>
             &nbsp; <a href="#" onclick="doNext(); return false"><span id="btnext"><i class="fa fa-fast-forward"></i></span></a>
